@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/top/top"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3b4ca6",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "极果头脑大会",
+    "backgroundColor": "#3b4ca6",
+    "backgroundTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  },
+  "debug": false
+}

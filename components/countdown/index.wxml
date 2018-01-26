@@ -1,0 +1,4 @@
+<view class="countdown-wrap" wx:if="{{return}}">
+  <text>{{countdownTime}}</text>
+  <slot></slot>
+</view>

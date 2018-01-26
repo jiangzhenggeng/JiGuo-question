@@ -1,0 +1,107 @@
+<wxs module="countdown">
+  var countdown = function (currentQuestion){
+  return (!currentQuestion.selectAnswer && !currentQuestion.countdownIsEnd);
+  }
+  module.exports = countdown;
+</wxs>
+<wxs module="getAnswerClass">
+  var getAnswerClass = function (currentQuestion,index){
+  if(currentQuestion._index_===index && !currentQuestion._showAnswer_ && currentQuestion.selectAnswer){
+  return 'select';
+  }else if(currentQuestion.rightIndex===index){
+  return 'right';
+  }else if(currentQuestion.errorIndex===index){
+  return 'error';
+  }
+  }
+  module.exports = getAnswerClass;
+</wxs>
+
+<view
+  wx:if="{{init}}"
+  class="question-wrap"
+>
+  <view wx:if="{{isStart}}">
+    <view wx:if="{{!questionArray.length}}" class="wait-show-answer">
+      <view>{{result.title}}</view>
+      <view>即将开始，请稍后...</view>
+      <button class="button" open-type="share">分享给朋友</button>
+    </view>
+    <view wx:elif="{{currentQuestion}}">
+      <view class="question-header">
+        <view style="display:{{countdown(currentQuestion)?'block':'none'}}">
+          <block wx:if="{{countdownShowStatusChange}}">
+            <include src="../index-components/countdown/index.wxml"/>
+          </block>
+        </view>
+        <view style="display:{{countdown(currentQuestion)?'none':'block'}}" class="user-has-answer">
+          <view wx:if="{{!currentQuestion._showAnswer_}}" class="right">
+            <text>等待公布答案...</text>
+          </view>
+          <view wx:elif="{{currentQuestion.selectAnswer}}">
+            <view wx:if="{{currentQuestion.rightIndex>=0}}" class="right">
+              <text>你已答对</text>
+              <image class="image" src="/images/right.svg" mode="aspectFit"/>
+            </view>
+            <view wx:else class="error">
+              <text>你已答错</text>
+              <image class="image" src="/images/cha.svg" mode="aspectFit"/>
+            </view>
+          </view>
+          <view wx:else class="error">
+            <text>你未作答</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="question-body">
+        <view class="question-box">
+          <view class="question-title">
+            <text>{{currentQuestion.title}}</text>
+          </view>
+          <view class="question-option-box">
+            <view
+              wx:for="{{currentQuestion.desc}}"
+              wx:key="{{item}}"
+              catch:tap="selectQuestionAnswer"
+              class="question-option-item {{getAnswerClass(currentQuestion,index)}}"
+              hover-class="{{currentQuestion.selectAnswer||currentQuestion.countdownIsEnd?'':'question-option-item-hover'}}"
+              data-index="{{index}}"
+            >
+              <text>{{item}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:else class="wait-show-answer">
+      <text>即将开始下一题，请稍后...</text>
+    </view>
+  </view>
+  <view wx:elif="{{isEnd}}" class="wait-show-answer">
+    <text>活动已结束</text>
+  </view>
+  <view wx:else class="wait-show-answer">
+    <text>活动未开始</text>
+  </view>
+
+</view>
+<page-loading wx:else/>
+
+<snow-layer/>
+
+<dialog-toast id="dialog-toast"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

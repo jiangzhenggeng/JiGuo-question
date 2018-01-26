@@ -1,0 +1,18 @@
+@import '/scss/app.wxss'; temp {
+  width: 0;
+}
+page {
+  user-select: none;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  font-size: 28rpx;
+  color: #fff;
+  font-family: "PingFang SC", "Arial", sans-serif;
+  background-color: #3b4ca6;
+}
+page .container {
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+}

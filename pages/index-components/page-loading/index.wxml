@@ -1,0 +1,5 @@
+<view class="page-loading" wx:if="{{show}}">
+  <view class="page-loading-logo">
+    <image class="image" src="/images/footer-logo@2x.png" mode="aspectFit"/>
+  </view>
+</view>

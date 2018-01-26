@@ -1,0 +1,3 @@
+<view class="dialog-toast-wrap {{position}}" wx:if="{{show}}">
+  <view class="dialog-toast-box">{{message}}</view>
+</view>

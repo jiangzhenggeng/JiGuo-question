@@ -1,0 +1,6 @@
+<!--<view class="userinfo-wrap" wx:if="{{userInfo.nickName}}">-->
+  <!--<view class="userinfo-face">-->
+    <!--<image src="{{userInfo.avatarUrl}}" mode="aspectFit"/>-->
+  <!--</view>-->
+  <!--<view class="userinfo-nickname">{{userInfo.nickName}}</view>-->
+<!--</view>-->

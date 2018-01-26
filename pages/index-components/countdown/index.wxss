@@ -1,0 +1,283 @@
+.countdown-wrap {
+  width: 150rpx;
+  height: 150rpx;
+  position: relative;
+  text-align: center;
+  /* time scroll*/
+}
+.countdown-wrap .pie {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 0px 1px #fff inset;
+  transform: rotate(0deg);
+}
+.countdown-wrap .pie1 {
+  clip: rect(0px, 150rpx, 150rpx, 75rpx);
+}
+.countdown-wrap .pie1.animate5 {
+  animation: animate-rotate-1 2.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate6 {
+  animation: animate-rotate-1 3s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate7 {
+  animation: animate-rotate-1 3.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate8 {
+  animation: animate-rotate-1 4s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate9 {
+  animation: animate-rotate-1 4.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate10 {
+  animation: animate-rotate-1 5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate11 {
+  animation: animate-rotate-1 5.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate12 {
+  animation: animate-rotate-1 6s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate13 {
+  animation: animate-rotate-1 6.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate14 {
+  animation: animate-rotate-1 7s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate15 {
+  animation: animate-rotate-1 7.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate16 {
+  animation: animate-rotate-1 8s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate17 {
+  animation: animate-rotate-1 8.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate18 {
+  animation: animate-rotate-1 9s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate19 {
+  animation: animate-rotate-1 9.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate20 {
+  animation: animate-rotate-1 10s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate21 {
+  animation: animate-rotate-1 10.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate22 {
+  animation: animate-rotate-1 11s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate23 {
+  animation: animate-rotate-1 11.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate24 {
+  animation: animate-rotate-1 12s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate25 {
+  animation: animate-rotate-1 12.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate26 {
+  animation: animate-rotate-1 13s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate27 {
+  animation: animate-rotate-1 13.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate28 {
+  animation: animate-rotate-1 14s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate29 {
+  animation: animate-rotate-1 14.5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie1.animate30 {
+  animation: animate-rotate-1 15s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2 {
+  clip: rect(0px, 75rpx, 150rpx, 0px);
+}
+.countdown-wrap .pie2.animate5 {
+  animation: animate-rotate-2 5s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate6 {
+  animation: animate-rotate-2 6s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate7 {
+  animation: animate-rotate-2 7s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate8 {
+  animation: animate-rotate-2 8s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate9 {
+  animation: animate-rotate-2 9s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate10 {
+  animation: animate-rotate-2 10s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate11 {
+  animation: animate-rotate-2 11s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate12 {
+  animation: animate-rotate-2 12s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate13 {
+  animation: animate-rotate-2 13s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate14 {
+  animation: animate-rotate-2 14s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate15 {
+  animation: animate-rotate-2 15s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate16 {
+  animation: animate-rotate-2 16s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate17 {
+  animation: animate-rotate-2 17s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate18 {
+  animation: animate-rotate-2 18s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate19 {
+  animation: animate-rotate-2 19s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate20 {
+  animation: animate-rotate-2 20s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate21 {
+  animation: animate-rotate-2 21s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate22 {
+  animation: animate-rotate-2 22s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate23 {
+  animation: animate-rotate-2 23s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate24 {
+  animation: animate-rotate-2 24s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate25 {
+  animation: animate-rotate-2 25s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate26 {
+  animation: animate-rotate-2 26s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate27 {
+  animation: animate-rotate-2 27s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate28 {
+  animation: animate-rotate-2 28s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate29 {
+  animation: animate-rotate-2 29s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .pie2.animate30 {
+  animation: animate-rotate-2 30s linear;
+  animation-fill-mode: forwards;
+}
+.countdown-wrap .hold {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  z-index: 1;
+}
+.countdown-wrap .bg {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #e45534;
+  box-shadow: 0 0 0px 1px #fff inset;
+}
+.countdown-wrap .time {
+  font-size: 30px;
+  width: 125rpx;
+  height: 125rpx;
+  box-sizing: border-box;
+  background-color: #3b4ca6;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(12.5rpx) translateX(12.5rpx) scale(1);
+  opacity: 1;
+}
+@keyframes animate-rotate-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes animate-rotate-2 {
+  0%,
+  49.9999999999999% {
+    transform: rotate(0deg);
+    background-color: #fff;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: #e45534;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #e45534;
+  }
+}

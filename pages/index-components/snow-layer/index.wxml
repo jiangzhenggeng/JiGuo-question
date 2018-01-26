@@ -1,0 +1,8 @@
+<view class="snow-container" wx:if="{{show}}">
+  <view class="snow foreground"></view>
+  <view class="snow foreground layered"></view>
+  <view class="snow middleground"></view>
+  <view class="snow middleground layered"></view>
+  <view class="snow background"></view>
+  <view class="snow background layered"></view>
+</view>

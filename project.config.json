@@ -1,0 +1,45 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.0",
+	"appid": "wxfbcf50cdd695e9d9",
+	"projectname": "极果头脑大会",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "dvsdvsdv",
+					"pathName": "pages/index/index",
+					"query": "id=8"
+				},
+				{
+					"id": 1,
+					"name": "dvsdvsdv",
+					"pathName": "pages/top/top",
+					"query": "id=8&name=sdsdv"
+				}
+			]
+		}
+	}
+}

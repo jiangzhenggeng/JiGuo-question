@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "排行榜",
+  "backgroundColor": "#3b4ca6",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "dialog-alert": "/components/dialog-alert/index",
+    "dialog-modal": "/components/dialog-modal/index",
+    "dialog-popup": "/components/dialog-popup/index",
+    "dialog-toast": "/components/dialog-toast/index",
+    "page-loading": "/components/page-loading/index",
+    "pullup-loading": "/components/pullup-loading/index",
+    "user-info": "../index-components/user-info/index",
+    "snow-layer": "../index-components/snow-layer/index"
+  }
+}

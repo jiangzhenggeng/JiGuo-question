@@ -1,0 +1,72 @@
+.snow-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  overflow: hidden;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+.snow-container .snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+  animation: snow linear infinite;
+}
+.snow-container .snow.foreground {
+  background-image: url(http://s1.jiguo.com/44970fa4-6b4c-45f9-82a4-d492bf74cde1);
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+.snow-container .snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+.snow-container .snow.middleground {
+  background-image: url(http://s1.jiguo.com/202cd18f-eb9a-4a66-85a1-03a11bd4dafc);
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+}
+.snow-container .snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.snow-container .snow.background {
+  background-image: url(http://s1.jiguo.com/35990ffb-5594-47e8-a911-f2b2b08b90f7);
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.snow-container .snow.background.layered {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+    transform: translate3d(15%, 100%, 0);
+  }
+}
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+    transform: translate3d(15%, 100%, 0);
+  }
+}

@@ -1,0 +1,17 @@
+.userinfo-wrap .userinfo-face {
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.userinfo-wrap .userinfo-face image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.userinfo-wrap .userinfo-nickname {
+  font-weight: 400;
+  font-size: 34rpx;
+  margin-top: 20rpx;
+  color: #fff;
+}

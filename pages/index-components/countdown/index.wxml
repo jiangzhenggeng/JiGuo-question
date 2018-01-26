@@ -1,0 +1,17 @@
+<view class="countdown-wrap">
+  <view class="hold">
+    <view class="pie pie1 animate{{totalTime}}"></view>
+    <view class="pie pie2 animate{{totalTime}}"></view>
+  </view>
+  <view class="bg"></view>
+  <view class="time">{{countdownTime}}</view>
+  <countdown-group wx:if="{{countdownTime>=0}}">
+    <countdown
+      endtime="{{countdownTime}}"
+      bind:run="countdownRun"
+      bind:end="countdownEnd"
+      return="{{false}}"
+    />
+  </countdown-group>
+</view>
+

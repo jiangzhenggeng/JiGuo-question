@@ -1,0 +1,23 @@
+<view class="top-wrap" wx:if="{{topList.length}}">
+  <view wx:if="{{init}}" class="top-list">
+    <view
+      wx:for="{{topList}}"
+      wx:key="item"
+      class="top-item {{userInfo.uid==item.uid?'self':''}}">
+      <text class="num  {{index==0?'f':(index==1?'s':(index==2?'t':''))}}">{{index+1}}</text>
+      <view class="user-info">
+        <image class="avator" src="{{item.avatar}}" mode="aspectFit"/>
+        <text class="name">{{item.username}}</text>
+      </view>
+      <view class="right-num-wrap">
+        <image class="image" src="/images/right.svg" mode="aspectFit"/>
+        <text class="right-num">{{item.right_num}}</text>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="no-data">
+    没有获取到信息
+  </view>
+</view>
+<page-loading wx:else/>
+<snow-layer/>
